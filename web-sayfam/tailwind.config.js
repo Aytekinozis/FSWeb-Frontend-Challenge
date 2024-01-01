@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -9,6 +10,8 @@ module.exports = {
       colors: {
         "my-purple": "#4731D3",
         "my-green": "#CBF281",
+        "my-darkpurple": "#171043",
+        "my-darkgreen": "#1A210B",
       },
       minHeight: {
         168: "42rem",

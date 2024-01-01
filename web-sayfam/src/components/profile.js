@@ -24,7 +24,11 @@ const Profile = () => {
             </div>
           </div>
 
-          <img className="size-72 rounded-lg object-cover" src={photo2} />
+          <img
+            alt="fotoex"
+            className="size-72 rounded-lg object-cover"
+            src={photo2}
+          />
           <div className="max-w-72 items-start flex flex-col justify-between">
             <h4>About Me</h4>
             <p>
