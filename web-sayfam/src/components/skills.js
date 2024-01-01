@@ -12,17 +12,17 @@ const Skills = () => {
         <h3 className="text-my-purple font-bold text-5xl">Skills</h3>
         <div className="flex flex-col">
           <div className="flex items-center">
-            <img alt="js" className=" mb-10 mr-8" src={jsimg} />
-            <p className="text-slate-400 text-2xl">JAVACSRIPT</p>
+            <img alt="js" className=" mb-10 mr-8 shadow-lg" src={jsimg} />
+            <p className="text-slate-400 text-2xl sh">JAVACSRIPT</p>
           </div>
           <div className="flex items-center">
-            <img alt="react" className=" mb-10 mr-8" src={reactimg} />
+            <img alt="react" className=" mb-10 mr-8 shadow-lg" src={reactimg} />
             <p className="text-slate-400 text-2xl">REACT</p>
           </div>
           <div className="flex items-center">
             <img
               alt="redux"
-              className="size-[7.5rem] rounded mb-10 mr-8"
+              className="size-[7.5rem] rounded mb-10 mr-8 shadow-lg"
               src={reduximg}
             />
             <p className="text-slate-400 text-2xl">REDUX</p>
@@ -30,19 +30,19 @@ const Skills = () => {
         </div>
         <div>
           <div className="flex items-center">
-            <img alt="node" className=" mb-10 mr-8" src={nodeimg} />
+            <img alt="node" className=" mb-10 mr-8 shadow-lg" src={nodeimg} />
             <p className="text-slate-400 text-2xl">NODE</p>
           </div>
           <div className="flex items-center">
             <img
               alt="vscode"
-              className="size-[7.5rem] rounded mb-10 mr-8"
+              className="size-[7.5rem] rounded mb-10 mr-8 shadow-lg"
               src={vscodeimg}
             />
             <p className="text-slate-400 text-2xl">VS CODE</p>
           </div>
           <div className="flex items-center">
-            <img alt="figma" className=" mb-10 mr-8" src={figmaimg} />
+            <img alt="figma" className=" mb-10 mr-8 shadow-lg" src={figmaimg} />
             <p className="text-slate-400 text-2xl">FIGMA</p>
           </div>
         </div>

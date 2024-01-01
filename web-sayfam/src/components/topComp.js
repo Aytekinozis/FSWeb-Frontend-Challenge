@@ -38,7 +38,7 @@ const TopComp = () => {
         </div>
         <img
           alt="anafoto"
-          className="size-96 rounded-lg object-cover"
+          className="size-96 rounded-lg object-cover shadow-lg"
           src={photo}
         ></img>
       </div>

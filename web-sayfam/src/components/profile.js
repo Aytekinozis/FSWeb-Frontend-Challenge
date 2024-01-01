@@ -26,7 +26,7 @@ const Profile = () => {
 
           <img
             alt="fotoex"
-            className="size-72 rounded-lg object-cover"
+            className="size-72 rounded-lg object-cover shadow-lg"
             src={photo2}
           />
           <div className="max-w-72 items-start flex flex-col justify-between">

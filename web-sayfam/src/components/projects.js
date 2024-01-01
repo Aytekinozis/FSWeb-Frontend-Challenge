@@ -8,7 +8,7 @@ const Projects = () => {
         <h3 className="text-my-purple font-bold text-5xl text-left mt-16 mb-8">
           Projects
         </h3>
-        <div className="flex bg-white rounded-xl mb-8 gap-4">
+        <div className="flex bg-white rounded-xl mb-8 gap-4 shadow-lg">
           <img
             className="size-[22.5rem]  object-cover rounded-l-xl"
             src={project1}
