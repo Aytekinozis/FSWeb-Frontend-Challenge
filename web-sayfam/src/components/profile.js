@@ -2,8 +2,8 @@ import photo2 from "../images/photo2.png";
 
 const Profile = () => {
   return (
-    <div className="bg-my-purple flex justify-center">
-      <div className="w-9/12 flex flex-col justify-between m-10">
+    <div className="bg-my-purple flex justify-center py-10">
+      <div className="w-9/12 flex flex-col justify-between mx-10 my-10">
         <h3 className="text-my-green font-bold text-5xl text-left">Profile</h3>
         <div className="flex text-white justify-between text-left">
           <div className="flex flex-col justify-evenly">

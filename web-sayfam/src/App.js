@@ -5,6 +5,8 @@ import Header from "./components/header";
 import TopComp from "./components/topComp";
 import Skills from "./components/skills";
 import Profile from "./components/profile";
+import Projects from "./components/projects";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <TopComp />
       <Skills />
       <Profile />
+      <Projects />
+      <Footer />
     </div>
   );
 }

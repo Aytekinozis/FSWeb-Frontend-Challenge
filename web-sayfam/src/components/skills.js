@@ -20,7 +20,7 @@ const Skills = () => {
             <p className="text-slate-400 text-2xl">REACT</p>
           </div>
           <div className="flex items-center">
-            <img className="size-28 rounded mb-10 mr-8" src={reduximg} />
+            <img className="size-[7.5rem] rounded mb-10 mr-8" src={reduximg} />
             <p className="text-slate-400 text-2xl">REDUX</p>
           </div>
         </div>
@@ -30,7 +30,7 @@ const Skills = () => {
             <p className="text-slate-400 text-2xl">NODE</p>
           </div>
           <div className="flex items-center">
-            <img className="size-28 rounded mb-10 mr-8" src={vscodeimg} />
+            <img className="size-[7.5rem] rounded mb-10 mr-8" src={vscodeimg} />
             <p className="text-slate-400 text-2xl">VS CODE</p>
           </div>
           <div className="flex items-center">
