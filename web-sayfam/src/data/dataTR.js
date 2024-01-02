@@ -39,6 +39,7 @@ const dataTr = {
       lib3: "vercel",
       href: "",
       github: "",
+      image: "project1.png",
     },
     {
       projname: "Journey",
@@ -49,6 +50,7 @@ const dataTr = {
       lib3: "vercel",
       href: "",
       github: "",
+      image: "project2.png",
     },
   ],
   footer: {
