@@ -12,6 +12,7 @@ module.exports = {
         "my-green": "#CBF281",
         "my-darkpurple": "#171043",
         "my-darkgreen": "#1A210B",
+        "my-black": "#252128",
       },
       minHeight: {
         168: "42rem",
@@ -24,5 +25,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

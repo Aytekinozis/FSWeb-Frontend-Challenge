@@ -39,6 +39,7 @@ const dataEn = {
       lib3: "vercel",
       href: "",
       github: "",
+      image: "project1.png",
     },
     {
       projname: "Journey",
@@ -49,6 +50,7 @@ const dataEn = {
       lib3: "vercel",
       href: "",
       github: "",
+      image: "project2.png",
     },
   ],
   footer: {
@@ -57,3 +59,5 @@ const dataEn = {
     mail: "almilasucode@gmail.com",
   },
 };
+
+export default dataEn;

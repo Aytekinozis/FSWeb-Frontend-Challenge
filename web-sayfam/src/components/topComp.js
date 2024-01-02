@@ -1,17 +1,19 @@
+import { useContext } from "react";
 import photo from "../images/b04fd1fa29a883e2f4b8b8577a5c82eb.png";
+import { DataContext } from "../context/DataContext";
 
 const TopComp = () => {
+  const mydata = useContext(DataContext);
   return (
     <div className="bg-my-purple dark:bg-my-darkpurple min-h-168 justify-center flex static left-0">
       <div className="bg-my-green dark:bg-my-darkgreen absolute top-auto right-0 min-h-168 w-3/12 flex"></div>
       <div className="flex flex-wrap absolute justify-between w-9/12 h-96 top-36">
         <div className="flex space-between flex-col justify-evenly">
-          <h1 className="text-my-green text-6xl text-left">
-            I am a Frontend<br></br> Developer...
+          <h1 className="text-my-green text-6xl text-left w-136">
+            {mydata.data.topcomp.frontend}
           </h1>
-          <p className="text-white text-left">
-            ...who likes to craft solid and scalable frontend
-            <br /> products with great user experiences.
+          <p className="text-white text-left w-136">
+            {mydata.data.topcomp.explaination}
           </p>
           <div className="flex">
             <button className="bg-white hover:bg-my-green rounded-md w-28 h-10 mr-3">
@@ -19,7 +21,7 @@ const TopComp = () => {
             </button>
             <a
               href="https://www.google.com"
-              className=" btn btn-light"
+              className=" btn btn-light dark:btn-ghost"
               role="button"
             >
               <svg

@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Form, FormGroup, Input, Label } from "reactstrap";
+import { DataContext } from "../context/DataContext";
 
 const Header = () => {
   const [check, setCheck] = useState(false);
   const [darkMode, setDarkMode] = useState("light");
+  const mydata = useContext(DataContext);
+  //const {toggleLanguage}
 
   const htmlDarkModeSetter = () => {
     if (
@@ -26,18 +29,28 @@ const Header = () => {
     setCheck(darkMode === "light" ? true : false);
   };
 
+  const languageHandler = () => {
+    mydata.toggleLanguage();
+  };
+
   useEffect(() => {
     htmlDarkModeSetter();
+    //console.log(mydata);
   }, []);
   return (
     <div className="flex justify-around bg-my-purple dark:bg-my-darkpurple min-h-24">
       <div className="bg-my-green dark:bg-my-darkgreen absolute top-0 right-0 min-h-24 w-3/12 flex"></div>
       <div className="">
-        <h2 className="text-my-green text-4xl text-left mt-5">almilla</h2>
+        <h2 className="text-my-green text-4xl text-left mt-5">
+          {mydata.data.header.name}
+        </h2>
       </div>
       <div className="sticky flex items-baseline mt-3">
-        <button className="mr-8 text-my-green font-bold align-top">
-          Turkceye Gec
+        <button
+          onClick={languageHandler}
+          className="mr-8 text-my-green font-bold align-top"
+        >
+          {mydata.data.header.switchtoturkish}
         </button>
         <Form>
           <FormGroup switch>
