@@ -1,7 +1,7 @@
 const dataTr = {
   header: {
     name: "almilla",
-    switchtoturkish: "Türkçeye geç",
+    switchtoturkish: "İngilizce'ye Geç",
   },
   topcomp: {
     frontend: "Ben bir Frontend Geliştiricisiyim...",
