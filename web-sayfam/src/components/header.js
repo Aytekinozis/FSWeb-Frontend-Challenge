@@ -49,7 +49,7 @@ const Header = () => {
         <div className="sticky flex items-baseline mt-3">
           <button
             onClick={languageHandler}
-            className="mr-20 text-my-green font-bold align-top"
+            className="mr-20 pr-5 text-my-green font-bold align-top"
           >
             {mydata.data.header.switchtoturkish}
           </button>

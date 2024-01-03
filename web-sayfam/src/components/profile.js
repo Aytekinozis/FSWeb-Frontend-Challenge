@@ -10,7 +10,7 @@ const Profile = () => {
         <h3 className="text-my-green font-bold text-5xl text-left">
           {mydata.data.profile.profile}
         </h3>
-        <div className="flex text-white justify-between text-left">
+        <div className="flex text-white justify-between flex-wrap text-left">
           <div className="flex flex-col justify-evenly">
             <h4>{mydata.data.profile.basicinfo}</h4>
             <div className="flex flex-col justify-between gap-2">
