@@ -5,14 +5,25 @@ import axios from "axios";
 
 export const DataContext = createContext();
 
+const language = () => {
+  if (JSON.parse(localStorage.getItem("lang"))) {
+    return JSON.parse(localStorage.getItem("lang"));
+  } else {
+    return "en";
+  }
+};
+
 export const DataContextProvider = ({ children }) => {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState(language());
 
   const [data, setData] = useState(lang === "en" ? dataEn : dataTr);
+
   const toggleLanguage = () => {
     const language = lang === "en" ? "tr" : "en";
-    localStorage.setItem("lang", language);
+    localStorage.setItem("lang", JSON.stringify(language));
     setLang(language);
+    const langdata = JSON.parse(localStorage.getItem("lang"));
+    console.log(localStorage.getItem("lang"));
   };
 
   const postData = (data) => {
@@ -28,15 +39,20 @@ export const DataContextProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    localStorage.setItem("lang", "en");
-    //setData(lang === "en" ? dataEn : dataTr);
+    if (JSON.parse(localStorage.getItem("lang")) === "tr") {
+      localStorage.setItem("lang", JSON.stringify("tr"));
+      setData(dataTr);
+      postData(dataTr);
+      console.log("if calisti");
+    } else {
+      postData(data);
+    }
+
     //console.log(data);
-    postData(data);
   }, []);
   useEffect(() => {
-    //localStorage.setItem("lang", "en");
     lang === "en" ? postData(dataEn) : postData(dataTr);
-    console.log(data);
+    //console.log(data);
   }, [lang]);
 
   return (
