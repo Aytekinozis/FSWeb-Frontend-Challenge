@@ -5,7 +5,7 @@ import { DataContext } from "../context/DataContext";
 const Profile = () => {
   const mydata = useContext(DataContext);
   return (
-    <div className="bg-my-purple flex justify-center py-10">
+    <div className="bg-my-purple dark:bg-my-darkpurple flex justify-center py-10">
       <div className="w-9/12 flex flex-col justify-between mx-10 my-10">
         <h3 className="text-my-green font-bold text-5xl text-left">
           {mydata.data.profile.profile}

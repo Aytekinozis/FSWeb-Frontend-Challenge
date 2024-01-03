@@ -9,10 +9,10 @@ const TopComp = () => {
       <div className="bg-my-green dark:bg-my-darkgreen absolute top-auto right-0 min-h-168 w-3/12 flex"></div>
       <div className="flex flex-wrap absolute justify-between w-9/12 h-96 top-36">
         <div className="flex space-between flex-col justify-evenly">
-          <h1 className="text-my-green text-6xl text-left w-136">
+          <h1 className="text-my-green text-6xl text-left max-w-136">
             {mydata.data.topcomp.frontend}
           </h1>
-          <p className="text-white text-left w-136">
+          <p className="text-white text-left max-w-136">
             {mydata.data.topcomp.explaination}
           </p>
           <div className="flex">

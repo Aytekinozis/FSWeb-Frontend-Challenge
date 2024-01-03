@@ -38,33 +38,35 @@ const Header = () => {
     //console.log(mydata);
   }, []);
   return (
-    <div className="flex justify-around bg-my-purple dark:bg-my-darkpurple min-h-24">
-      <div className="bg-my-green dark:bg-my-darkgreen absolute top-0 right-0 min-h-24 w-3/12 flex"></div>
-      <div className="">
-        <h2 className="text-my-green text-4xl text-left mt-5">
-          {mydata.data.header.name}
-        </h2>
-      </div>
-      <div className="sticky flex items-baseline mt-3">
-        <button
-          onClick={languageHandler}
-          className="mr-8 text-my-green font-bold align-top"
-        >
-          {mydata.data.header.switchtoturkish}
-        </button>
-        <Form>
-          <FormGroup switch>
-            <Input
-              type="switch"
-              role="switch"
-              checked={check}
-              onClick={toggleDarkMode}
-            />
-            <Label className="text-my-purple font-bold dark:text-white">
-              Dark Mode
-            </Label>
-          </FormGroup>
-        </Form>
+    <div className="flex justify-center bg-my-purple dark:bg-my-darkpurple min-h-24">
+      <div className="flex w-9/12 justify-between">
+        <div className="bg-my-green dark:bg-my-darkgreen absolute top-0 right-0 min-h-24 w-3/12 flex"></div>
+        <div className="">
+          <h2 className="text-my-green text-4xl text-left mt-5">
+            {mydata.data.header.name}
+          </h2>
+        </div>
+        <div className="sticky flex items-baseline mt-3">
+          <button
+            onClick={languageHandler}
+            className="mr-20 text-my-green font-bold align-top"
+          >
+            {mydata.data.header.switchtoturkish}
+          </button>
+          <Form className="mr-4">
+            <FormGroup switch>
+              <Input
+                type="switch"
+                role="switch"
+                checked={check}
+                onClick={toggleDarkMode}
+              />
+              <Label className="text-my-purple font-bold dark:text-white">
+                Dark Mode
+              </Label>
+            </FormGroup>
+          </Form>
+        </div>
       </div>
     </div>
   );
