@@ -19,7 +19,8 @@ module.exports = {
         "my-black": "#252128",
       },
       minHeight: {
-        168: "42rem",
+        152: "38rem",
+        200: "50rem",
       },
       minWidth: {
         136: "34rem",

@@ -8,7 +8,7 @@ import { DataContext } from "../context/DataContext";
 const Footer = () => {
   const mydata = useContext(DataContext);
   return (
-    <div className="flex flex-col items-center justify-center py-5 dark:bg-my-black">
+    <div className="flex flex-col text-center font-inter items-center justify-center py-5 dark:bg-my-black">
       <div className="w-1/3 flex  flex-col gap-6">
         <h3 className="text-my-purple text-5xl font-bold">
           {mydata.data.footer.message}

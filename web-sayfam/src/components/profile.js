@@ -5,32 +5,32 @@ import { DataContext } from "../context/DataContext";
 const Profile = () => {
   const mydata = useContext(DataContext);
   return (
-    <div className="bg-my-purple dark:bg-my-darkpurple flex justify-center py-10">
-      <div className="w-9/12 flex flex-col justify-between mx-10 my-10">
-        <h3 className="text-my-green font-bold text-5xl text-left">
+    <div className="bg-my-purple font-inter dark:bg-my-darkpurple flex justify-center py-10">
+      <div className="w-9/12 flex flex-col justify-center sm:justify-between mx-10 my-10">
+        <h3 className="text-my-green font-bold text-5xl sm:text-left">
           {mydata.data.profile.profile}
         </h3>
-        <div className="flex text-white justify-between flex-wrap text-left">
-          <div className="flex flex-col justify-evenly">
+        <div className="flex text-white justify-center sm:justify-between gap-2 flex-wrap sm:text-left">
+          <div className="flex flex-col  justify-center sm:justify-evenly">
             <h4>{mydata.data.profile.basicinfo}</h4>
-            <div className="flex flex-col justify-between gap-2">
-              <div className="flex gap-3 w-38">
+            <div className="flex flex-col justify-center sm:justify-between gap-2">
+              <div className="flex justify-center sm:justify-start gap-3 w-38">
                 <p className="pb-2 text-my-green">
                   {mydata.data.profile.birthdate}
                 </p>
                 <p className="pb-2">{mydata.data.profile.birthdate2}</p>
               </div>
-              <div className="flex gap-3 w-38">
+              <div className="flex justify-center sm:justify-start gap-3 w-38">
                 <p className="pb-2 text-my-green">{mydata.data.profile.city}</p>
                 <p className="pb-2">{mydata.data.profile.city2}</p>
               </div>
-              <div className="flex gap-3 w-38">
+              <div className="flex justify-center sm:justify-start gap-3 w-38">
                 <p className="pb-2 text-my-green">
                   {mydata.data.profile.education}
                 </p>
                 <p className="pb-2">{mydata.data.profile.education2}</p>
               </div>
-              <div className="flex gap-3 w-38 items-start">
+              <div className="flex justify-center sm:justify-start gap-3 w-38 items-start">
                 <p className="pb-2 text-my-green">{mydata.data.profile.role}</p>
 
                 <p className="pb-2">{mydata.data.profile.role2}</p>

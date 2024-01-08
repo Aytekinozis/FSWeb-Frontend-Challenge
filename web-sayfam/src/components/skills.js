@@ -10,7 +10,7 @@ import { DataContext } from "../context/DataContext";
 const Skills = () => {
   const mydata = useContext(DataContext);
   return (
-    <div className="flex justify-center dark:bg-my-black">
+    <div className="flex justify-center  font-inter dark:bg-my-black">
       <div className="flex justify-between w-9/12 pt-20 pb-10 flex-wrap">
         <h3 className="text-my-purple dark:text-my-green font-bold text-5xl">
           {mydata.data.skills.skills}

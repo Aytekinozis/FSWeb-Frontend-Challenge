@@ -40,16 +40,16 @@ const Header = () => {
   return (
     <div className="flex justify-center bg-my-purple dark:bg-my-darkpurple min-h-24">
       <div className="flex w-9/12 justify-between">
-        <div className="bg-my-green dark:bg-my-darkgreen absolute top-0 right-0 min-h-24 w-3/12 flex"></div>
+        <div className="bg-my-green dark:bg-my-darkgreen absolute top-0 right-0 sm:min-h-24 w-3/12 flex"></div>
         <div className="">
-          <h2 className="text-my-green text-4xl text-left mt-5">
+          <h2 className="text-my-green text-4xl text-left mt-5 font-inter">
             {mydata.data.header.name}
           </h2>
         </div>
-        <div className="sticky flex items-baseline mt-3">
+        <div className="sticky  font-inter flex-wrap sm:flex-nowrap flex-col sm:flex-row items-start flex justify-end sm:items-baseline mt-3">
           <button
             onClick={languageHandler}
-            className="mr-20 pr-5 text-my-green font-bold align-top"
+            className="mb-2 sm:mb-0 sm:mr-20 sm:pr-5 text-my-green font-bold align-top"
           >
             {mydata.data.header.switchtoturkish}
           </button>
@@ -61,7 +61,7 @@ const Header = () => {
                 checked={check}
                 onClick={toggleDarkMode}
               />
-              <Label className="text-my-purple font-bold dark:text-white">
+              <Label className="text-my-green sm:text-my-purple font-bold dark:text-white">
                 Dark Mode
               </Label>
             </FormGroup>
