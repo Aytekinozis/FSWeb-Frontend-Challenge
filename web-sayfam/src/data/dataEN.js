@@ -31,7 +31,7 @@ const dataEn = {
   project: "Projects",
   projects: [
     {
-      projname: "E*commerce",
+      projname: "E-commerce",
       explaination:
         "As the creator of this e-commerce website, I utilized React for its robust capabilities. React Router empowers me to seamlessly navigate between pages, while Axios ensures efficient handling of all API requests. React Redux serves as the backbone for managing global state effectively. For a visually appealing and user-friendly interface, I've incorporated Tailwind CSS and a selection of UI libraries. Additionally, React Hook Form streamlines form management and validation. The website empowers users to sign up, sign in, browse products, and make purchases with ease.",
       lib1: "react",
