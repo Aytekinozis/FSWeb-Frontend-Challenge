@@ -16,10 +16,15 @@ const TopComp = () => {
             {mydata.data.topcomp.explaination}
           </p>
           <div className="flex justify-center sm:justify-start gap-4 text-center">
-            <a className="btn btn-light pt-2 px-4">GitHub</a>
+            <a
+              href="https://github.com/Aytekinozis"
+              className="btn btn-light pt-2 px-4"
+            >
+              GitHub
+            </a>
 
             <a
-              href="https://www.google.com"
+              href="https://www.linkedin.com/in/aytekin-öziş-0a854946/"
               className=" btn btn-light pt-2 px-4"
               role="button"
             >
