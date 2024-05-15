@@ -1,6 +1,6 @@
 const dataTr = {
   header: {
-    name: "almilla",
+    name: "Aytekin",
     switchtoturkish: "İngilizce'ye Geç",
   },
   topcomp: {
