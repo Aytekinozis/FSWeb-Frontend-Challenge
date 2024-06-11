@@ -18,24 +18,21 @@ const Footer = () => {
         </p>
         <a
           className="text-my-purple text-xl font-medium"
-          href="https://www.gmail.com"
+          href="mailto:aytekinozis93@gmail.com"
         >
           {mydata.data.footer.mail}
         </a>
         <div className="flex justify-center gap-6">
-          <a href="https://twitter.com">
+          <a href="https://twitter.com/aytekings">
             <img src={twitter} />
           </a>
           <a href="https://codepen.io/">
             <img src={codepen} />
           </a>
-          <a href="">
+          <a href="mailto:aytekinozis93@gmail.com">
             <img src={atsign} />
           </a>
-          <a
-            href="https://www.instagram.com
-"
-          >
+          <a href="https://www.instagram.com/aytekings/">
             <img src={instagram} />
           </a>
         </div>
