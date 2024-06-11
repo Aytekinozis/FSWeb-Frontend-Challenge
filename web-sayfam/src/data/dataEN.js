@@ -24,9 +24,9 @@ const dataEn = {
     role2: "Frontend, UI",
     about: "About Me",
     aboutfirst:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniamaut, odit laborum aliquam voluptatum nisi mollitia.",
+      "After graduating from Uludağ University, environmental engineering, I started to improve myself to become a fullstack developer. Meanwhile, I also improved my English. I still attend courses and improve myself.",
     aboutsecond:
-      "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quoddeserunt quam temporibus cumque magnam!",
+      "My passion for producing creative and innovative solutions increases my motivation to achieve the best results for every project. I'm always willing to learn something new and improve myself.",
   },
   project: "Projects",
   projects: [
@@ -56,7 +56,7 @@ const dataEn = {
   footer: {
     message: "Send me a message!",
     note: "Got a question or proposal, or just want to say hello? Go ahead.",
-    mail: "almilasucode@gmail.com",
+    mail: "aytekinozis93@gmail.com",
   },
 };
 
